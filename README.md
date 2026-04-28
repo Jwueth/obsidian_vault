@@ -26,7 +26,7 @@ Les plugins communautaires suivants sont recommandés pour une expérience optim
 
 | Plugin | Usage |
 |--------|-------|
-| [templater-obsidian](https://github.com/SilentVoid13/Templater) | Formules dans les templates |
+| [templater-obsidian](https://github.com/SilentVoid1/Templater) | Formules dans les templates |
 | [remotely-save](https://github.com/remotely-save/remotely-save) | Synchronisation du vault |
 | [obsidian-local-rest-api](https://github.com/coddingtonbear/obsidian-local-rest-api) | API REST locale |
 | [obsidian-importer](https://github.com/obsidianmd/obsidian-importer) | Import de données |
@@ -36,8 +36,6 @@ Les plugins communautaires suivants sont recommandés pour une expérience optim
 | [obsidian-excalidraw-plugin](https://github.com/zsviczian/obsidian-excalidraw-plugin) | Diagrammes Excalidraw |
 | [notebook-navigator](https://github.com/johansan/notebook-navigator) | Navigation dans les notebooks |
 | [obsidian-advanced-uri](https://github.com/Vinzent03/obsidian-advanced-uri) | URI avancées |
-
-> **Note :** Les templates utilisent des formules [Templater](https://github.com/SilentVoid13/Templater). Assurez-vous que le plugin est installé et activé.
 
 ### Apparence
 
@@ -58,7 +56,7 @@ Pour activer le thème, allez dans **Paramètres → Apparence → CSS Snippets*
 | Skill | Description |
 |-------|-------------|
 | `tri-box` | Traiter l'inbox et déplacer les notes vers le dossier notes |
-| `creer-concept` | Transformer une note en fiche concept |
+| `creer-concept` | Transformer une note en fiche Concept |
 | `creer-hub` | Créer une note hub (index de catégorie) |
 | `scan-vault-infer` | Analyser le vault pour identifier nouveaux concepts/hubs |
 | `enrichir-ressource` | Enrichir les métadonnées d'une ressource clipée |
@@ -83,8 +81,45 @@ Pour activer le thème, allez dans **Paramètres → Apparence → CSS Snippets*
 <RESOURCES>/
 <TEMPLATES>/
 Pièces jointes/
-OpenClaw/
 ```
+
+## Configuration
+
+### Chemins
+
+Éditez `CLAUDE.md` pour configurer les chemins de votre vault :
+
+| Élément | Chemin |
+|---------|--------|
+| Vault Obsidian | `<VAULT_PATH>` |
+| Skills | `<SKILLS_PATH>/` |
+| Ce playbook | `<CONFIG_PATH>/obsidian/CLAUDE.md` |
+
+### Templates
+
+Les skills utilisent les templates du dossier `<TEMPLATES>/Notes/` :
+
+- `<TEMPLATE_PROJET>`
+- `<TEMPLATE_STANDARD>`
+- `<TEMPLATE_CONCEPT>`
+
+### Templates de mise en page
+
+Des templates de mise en page sont disponibles dans `<TEMPLATES>/mise en page/` :
+
+#### Tableaux
+
+- `Tab builder.md` - Créateur de tableaux personnalisés
+- `Tableaux pré-remplis.md` - Tableaux pré-remplis
+- `Tableaux pré-remplis v2.md` - Tableaux pré-remplis v2
+- `weekly.md` - Tableau hebdomadaire
+
+#### Colonnes
+
+- `2 colonnes.md` - Mise en page 2 colonnes
+- `2 colonnes comparaisons.md` - Comparaison en 2 colonnes
+- `3 colonnes.md` - Mise en page 3 colonnes
+- `Colonnes builder.md` - Créateur de colonnes personnalisées
 
 ## Architecture Cognitive Partagée (OpenClaw)
 
@@ -112,77 +147,6 @@ OpenClaw/
 - **Auditabilité** : Chaque décision de l'IA est visible dans le graphe Obsidian
 - **Collaboration sans conflit** : Zones read-only vs write évitent les corruptions
 
-> **Note :** Cette architecture nécessite une mise en place manuelle avec Docker, Nextcloud et rsync. Les fichiers inclus sont des exemples de structure.
-
-## Utilisation
-
-### Utilisation basique
-
-Les skills sont automatiquement invoqués quand vous demandez à Claude d'effectuer des tâches spécifiques :
-
-- **Traiter l'inbox** : "Traite mon inbox et organise les notes"
-- **Créer un concept** : "Transforme cette note en concept"
-- **Créer un hub** : "Crée un hub pour la catégorie 'Knowledge Management'"
-- **Analyser le vault** : "Analyse mon vault et suggère de nouveaux concepts"
-
-### Utilisation avancée
-
-Vous pouvez aussi utiliser les skills directement :
-
-```bash
-# Traiter l'inbox
-/tri-box
-
-# Créer un concept
-/creer-concept "Titre de la note"
-
-# Créer un hub
-/creer-hub "Nom de la catégorie"
-
-# Analyser le vault
-/scan-vault-infer
-```
-
-## Configuration
-
-### Chemins
-
-Éditez `CLAUDE.md` pour configurer les chemins de votre vault :
-
-| Élément | Chemin |
-|---------|--------|
-| Vault Obsidian | `<VAULT_PATH>` |
-| Skills | `<SKILLS_PATH>/` |
-| Ce playbook | `<CONFIG_PATH>/obsidian/CLAUDE.md` |
-
-### Templates
-
-Les skills utilisent les templates du dossier `<TEMPLATES>/Notes/` :
-
-- `<TEMPLATE_PROJET>`
-- `<TEMPLATE_STANDARD>`
-- `<TEMPLATE_CONCEPT>`
-
-> **Note :** Les templates utilisent des formules [Templater](https://github.com/SilentVoid13/Templater) pour générer automatiquement des propriétés et du contenu.
-
-### Templates de mise en page
-
-Des templates de mise en page sont disponibles dans `<TEMPLATES>/mise en page/` :
-
-#### Tableaux (plugin [Templater](https://github.com/SilentVoid13/Templater))
-
-- `Tab builder.md` - Créateur de tableaux personnalisés
-- `Tableaux pré-remplis.md` - Tableaux pré-remplis
-- `Tableaux pré-remplis v2.md` - Tableaux pré-remplis v2
-- `weekly.md` - Tableau hebdomadaire
-
-#### Colonnes (plugin [multi-column-markdown](https://github.com/ckRobinson/multi-column-markdown) et [Templater](https://github.com/SilentVoid13/Templater))
-
-- `2 colonnes.md` - Mise en page 2 colonnes
-- `2 colonnes comparaisons.md` - Comparaison en 2 colonnes
-- `3 colonnes.md` - Mise en page 3 colonnes
-- `Colonnes builder.md` - Créateur de colonnes personnalisées
-
 ## Philosophie
 
 > Obsidian = mémoire
@@ -191,5 +155,5 @@ Des templates de mise en page sont disponibles dans `<TEMPLATES>/mise en page/` 
 
 ---
 
-**Version :** v1.0.0  
+**Version :** v1.0.0
 **Dernière mise à jour :** 2026-04-28
