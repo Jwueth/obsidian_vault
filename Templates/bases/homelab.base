@@ -1,0 +1,11 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Catégories.contains(link("<CATEGORIES>/<COLLECTION_4>", "<COLLECTION_4>"))
+    order:
+      - file.name
+    sort:
+      - property: file.tags
+        direction: ASC

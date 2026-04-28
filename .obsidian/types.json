@@ -1,0 +1,15 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "Checkbox": "checkbox",
+    "Date": "date",
+    "Statut": "multitext",
+    "Thématiques": "multitext",
+    "Catégories": "multitext",
+    "Début": "date",
+    "Excalidraw": "multitext",
+    "Collection": "multitext"
+  }
+}

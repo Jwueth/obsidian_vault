@@ -1,0 +1,10 @@
+/* Properties mods */
+.metadata-container {
+    border: 1px solid #ef0692;
+    padding: 1em 1em 0.5em 2em;
+    border-radius: 5px;
+    background: #82063172;
+}
+.metadata-properties-title {
+    color: #ff96aa;
+}

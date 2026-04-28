@@ -1,0 +1,295 @@
+/* ═══════════════════════════════════════════
+   🌸 PINK DREAM THEME - Obsidian (Dark Mode)
+   Accent: #ff96aa (Rose doux)
+   ═══════════════════════════════════════════ */
+
+.theme-dark {
+    /* Couleurs principales - Rose */
+    --accent-pink: #ff96aa;
+    --accent-pink-dark: #ff6b89;
+    --accent-pink-light: #ffc1d0;
+    --accent-pink-faint: #ffe4eb;
+    --accent-pink-bg: #82063172; /* Background semi-transparent rose */
+    --accent-pink-border: #ef0692; /* Bordure rose vif */
+    
+    /* Variables Obsidian */
+    --interactive-accent: var(--accent-pink);
+    --interactive-accent-hover: var(--accent-pink-dark);
+    --text-accent: var(--accent-pink);
+    --text-accent-hover: var(--accent-pink-dark);
+    --link-color: var(--accent-pink-dark);
+    --link-color-hover: var(--accent-pink);
+    --link-unresolved-color: var(--accent-pink-light);
+    
+    /* Backgrounds */
+    --background-primary: #080808;
+    --background-primary-alt: #221a1e;
+    --background-secondary: #2a1f25;
+    --background-secondary-alt: #332530;
+    
+    /* Texte */
+    --text-normal: #e8d4db;
+    --text-muted: #b39ba5;
+    --text-faint: #7a6670;
+    
+    /* Bordures */
+    --border-color: #4a3540;
+    --divider-color: #3d2c36;
+}
+
+/* ═══════════════════════════════════════════
+   TITRES - Dégradé de roses
+   ═══════════════════════════════════════════ */
+body {
+  --h1-color: rgb(215, 52, 104);
+  --h2-color: rgb(218, 80, 124);
+  --h3-color: rgb(234, 129, 162);
+  --h4-color: rgb(244, 161, 188);
+  --h5-color: rgb(244, 172, 195);
+  --h6-color: rgb(236, 213, 221);
+}
+
+/* ═══════════════════════════════════════════
+   LIENS
+   ═══════════════════════════════════════════ */
+a {
+    color: var(--accent-pink-dark);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-pink);
+    text-decoration: underline;
+}
+
+.internal-link {
+    color: var(--accent-pink);
+}
+
+.internal-link:hover {
+    color: var(--accent-pink-dark);
+}
+
+/* Liens non résolus */
+.is-unresolved {
+    color: var(--accent-pink-light);
+    opacity: 0.7;
+}
+
+/* ═══════════════════════════════════════════
+   TAGS
+   ═══════════════════════════════════════════ */
+.tag {
+    background-color: var(--accent-pink-faint);
+    color: var(--accent-pink-dark);
+    border: 1px solid var(--accent-pink-light);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.85em;
+}
+
+.tag:hover {
+    background-color: var(--accent-pink-light);
+    color: var(--accent-pink-dark);
+}
+
+/* ═══════════════════════════════════════════
+   MISE EN FORME DU TEXTE
+   ═══════════════════════════════════════════ */
+strong {
+    color: var(--accent-pink-dark);
+    font-weight: 700;
+}
+
+em {
+    color: var(--accent-pink);
+}
+
+mark,
+.cm-s-obsidian span.cm-highlight {
+    background-color: var(--accent-pink-faint);
+    color: #2d2d2d;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* ═══════════════════════════════════════════
+   CODE
+   ═══════════════════════════════════════════ */
+code {
+    background-color: var(--accent-pink-faint);
+    color: var(--accent-pink-dark);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+pre code {
+    background-color: transparent;
+}
+
+/* ═══════════════════════════════════════════
+   CITATIONS
+   ═══════════════════════════════════════════ */
+blockquote {
+    border-left: 3px solid var(--accent-pink);
+    background-color: var(--accent-pink-faint);
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    border-radius: 0 6px 6px 0;
+}
+
+/* ═══════════════════════════════════════════
+   TABLEAUX
+   ═══════════════════════════════════════════ */
+thead {
+    background-color: var(--accent-pink-bg);
+    border-bottom: 2px solid var(--accent-pink);
+}
+
+th {
+    color: var(--accent-pink-dark);
+    font-weight: 600;
+}
+
+tbody tr:hover {
+    background-color: var(--accent-pink-bg) !important;
+}
+
+/* ═══════════════════════════════════════════
+   CALLOUTS
+   ═══════════════════════════════════════════ */
+.callout {
+    border-left: 3px solid var(--accent-pink);
+}
+
+.callout[data-callout="note"],
+.callout[data-callout="info"] {
+    background-color: var(--accent-pink-bg);
+    border-color: var(--accent-pink);
+}
+
+.callout-title {
+    color: var(--accent-pink-dark);
+    font-weight: 600;
+}
+
+/* ═══════════════════════════════════════════
+   PROPERTIES / METADATA
+   ═══════════════════════════════════════════ */
+.metadata-container {
+    border: 1px solid var(--accent-pink-border);
+    padding: 1em 1em 0.5em 2em;
+    border-radius: 5px;
+    background: var(--accent-pink-bg);
+}
+
+.metadata-properties-title {
+    color: var(--accent-pink);
+}
+
+/* ═══════════════════════════════════════════
+   CHECKBOX / TÂCHES
+   ═══════════════════════════════════════════ */
+input[type="checkbox"]:checked {
+    background-color: var(--accent-pink);
+    border-color: var(--accent-pink);
+}
+
+.task-list-item-checkbox {
+    border-color: var(--accent-pink-light);
+}
+
+.task-list-item-checkbox:checked {
+    background-color: var(--accent-pink);
+    border-color: var(--accent-pink);
+}
+
+.task-list-item-checkbox:checked::after {
+    color: white;
+}
+
+/* ═══════════════════════════════════════════
+   SÉLECTION DE TEXTE
+   ═══════════════════════════════════════════ */
+
+/* Sélection en mode LECTURE */
+.markdown-preview-view ::selection {
+    background-color: var(--accent-pink-light); /* Suggéré: rgba(255, 150, 170, 0.25) pour meilleur contraste en dark mode */
+    color: #2d2d2d; /* Suggéré: var(--text-normal) pour s'adapter au thème */
+}
+
+/* Sélection en mode ÉDITION - CodeMirror 6 */
+.cm-editor .cm-selectionBackground {
+    background-color: var(--accent-pink-light) !important; /* Suggéré: rgba(255, 150, 170, 0.25) */
+}
+
+.cm-editor .cm-content ::selection {
+    background-color: var(--accent-pink-light) !important; /* Suggéré: rgba(255, 150, 170, 0.25) */
+    color: #2d2d2d !important; /* Suggéré: var(--text-normal) */
+}
+
+/* Ligne active en mode édition (optionnel) */
+.cm-editor .cm-activeLine {
+    background-color: rgba(255, 150, 170, 0.08);
+}
+
+/* ═══════════════════════════════════════════
+   BARRE LATÉRALE
+   ═══════════════════════════════════════════ */
+.nav-file-title.is-active,
+.nav-folder-title.is-active {
+    background-color: var(--accent-pink-faint);
+    color: var(--accent-pink-dark);
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+    background-color: var(--accent-pink-faint);
+}
+
+/* ═══════════════════════════════════════════
+   BOUTONS
+   ═══════════════════════════════════════════ */
+button.mod-cta {
+    background-color: var(--accent-pink);
+    color: white;
+}
+
+button.mod-cta:hover {
+    background-color: var(--accent-pink-dark);
+}
+
+/* ═══════════════════════════════════════════
+   SCROLLBAR
+   ═══════════════════════════════════════════ */
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-pink-light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--accent-pink);
+}
+
+/* ═══════════════════════════════════════════
+   DIVIDERS
+   ═══════════════════════════════════════════ */
+hr {
+    border-color: var(--accent-pink-light);
+}
+
+/* ═══════════════════════════════════════════
+   GRAPH VIEW
+   ═══════════════════════════════════════════ */
+.graph-view.color-fill-unresolved {
+    color: var(--accent-pink-light);
+}
+
+.graph-view.color-fill-tag {
+    color: var(--accent-pink);
+}
+
+.graph-view.color-fill-attachment {
+    color: var(--accent-pink-dark);
+}

@@ -1,0 +1,11 @@
+{
+  "theme": "obsidian",
+  "accentColor": "",
+  "enabledCssSnippets": [
+    "footnotes",
+    "ligne",
+    "headers",
+    "pinkdream"
+  ],
+  "showViewHeader": true
+}

@@ -1,0 +1,11 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Catégories.contains(link("Catégorie/Sport", "Sport"))
+    order:
+      - file.name
+    sort:
+      - property: file.tags
+        direction: ASC

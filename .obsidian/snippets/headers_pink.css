@@ -1,0 +1,8 @@
+body {
+  --h1-color: rgb(215, 52, 104);
+  --h2-color: rgb(218, 80, 124);
+  --h3-color: rgb(234, 129, 162);
+  --h4-color: rgb(244, 161, 188);
+  --h5-color: rgb(244, 172, 195);
+  --h6-color: rgb(236, 213, 221);
+}

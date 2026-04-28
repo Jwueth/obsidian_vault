@@ -1,0 +1,13 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Catégories.contains(link("Catégorie/Guide", "Guide"))
+    order:
+      - file.name
+      - Projet
+      - Thématiques
+    sort:
+      - property: file.tags
+        direction: ASC
