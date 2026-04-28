@@ -112,6 +112,12 @@ Des templates de mise en page sont disponibles dans `<TEMPLATES>/mise en page/` 
 - `Tab builder.md` - Créateur de tableaux personnalisés
 - `Tableaux pré-remplis.md` - Tableaux pré-remplis
 - `Tableaux pré-remplis v2.md` - Tableaux pré-remplis v2
+  - Standard avec sélection colonnes et lignes
+  - Comparaison 
+  - 5 pourquoi 
+  - Avantages/inconvénients
+  - Calendrier
+
 - `weekly.md` - Tableau hebdomadaire
 
 #### Colonnes
