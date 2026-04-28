@@ -13,11 +13,9 @@ Ce dépôt fournit un ensemble de skills qui permettent à Claude de travailler 
 3. Copiez le fichier `CLAUDE.md` à la racine de votre vault
 4. Personnalisez les placeholders dans `CLAUDE.md` avec vos chemins de vault
 
-## Prérequis
+## Plugins conseillés
 
-### Plugins requis
-
-Les skills nécessitent les plugins communautaires suivants :
+Les plugins communautaires suivants sont recommandés pour une expérience optimale :
 
 | Plugin | Usage |
 |--------|-------|
