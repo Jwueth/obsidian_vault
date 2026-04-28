@@ -34,6 +34,18 @@ Les skills nécessitent les plugins communautaires suivants :
 
 > **Note :** Les templates utilisent des formules [Templater](https://github.com/SilentVoid1/Templater). Assurez-vous que le plugin est installé et activé.
 
+### Apparence
+
+#### Thème custom pinkdream
+
+Des snippets CSS personnalisés sont disponibles dans `.obsidian/snippets/` :
+
+- `pinkdream.css` - Thème principal rose/pink
+- `headers_pink.css` - Styles pour les titres
+- `properties_pink.css` - Styles pour les propriétés
+
+Pour activer le thème, allez dans **Paramètres → Apparence → CSS Snippets** et activez les snippets souhaités.
+
 ## Skills
 
 ### Skills principaux
