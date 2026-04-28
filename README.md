@@ -21,7 +21,7 @@ Les skills nécessitent les plugins communautaires suivants :
 
 | Plugin | Usage |
 |--------|-------|
-| [templater-obsidian](https://github.com/SilentVoid1/Templater) | Formules dans les templates |
+| [templater-obsidian](https://github.com/SilentVoid13/Templater) | Formules dans les templates |
 | [remotely-save](https://github.com/remotely-save/remotely-save) | Synchronisation du vault |
 | [obsidian-local-rest-api](https://github.com/coddingtonbear/obsidian-local-rest-api) | API REST locale |
 | [obsidian-importer](https://github.com/obsidianmd/obsidian-importer) | Import de données |
@@ -29,10 +29,10 @@ Les skills nécessitent les plugins communautaires suivants :
 | [multi-column-markdown](https://github.com/ckRobinson/multi-column-markdown) | Colonnes dans le Markdown |
 | [obsidian-pandoc](https://github.com/OliverBalfour/obsidian-pandoc) | Export Pandoc |
 | [obsidian-excalidraw-plugin](https://github.com/zsviczian/obsidian-excalidraw-plugin) | Diagrammes Excalidraw |
-| [notebook-navigator](https://github.com/xRyul/notebook-navigator) | Navigation dans les notebooks |
+| [notebook-navigator](https://github.com/johansan/notebook-navigator) | Navigation dans les notebooks |
 | [obsidian-advanced-uri](https://github.com/Vinzent03/obsidian-advanced-uri) | URI avancées |
 
-> **Note :** Les templates utilisent des formules [Templater](https://github.com/SilentVoid1/Templater). Assurez-vous que le plugin est installé et activé.
+> **Note :** Les templates utilisent des formules [Templater](https://github.com/SilentVoid13/Templater). Assurez-vous que le plugin est installé et activé.
 
 ### Apparence
 
@@ -129,20 +129,20 @@ Les skills utilisent les templates du dossier `<TEMPLATES>/Notes/` :
 - `<TEMPLATE_STANDARD>`
 - `<TEMPLATE_CONCEPT>`
 
-> **Note :** Les templates utilisent des formules [Templater](https://github.com/SilentVoid1/Templater) pour générer automatiquement des propriétés et du contenu.
+> **Note :** Les templates utilisent des formules [Templater](https://github.com/SilentVoid13/Templater) pour générer automatiquement des propriétés et du contenu.
 
 ### Templates de mise en page
 
 Des templates de mise en page sont disponibles dans `<TEMPLATES>/mise en page/` :
 
-#### Tableaux (plugin [multi-column-markdown](https://github.com/ckRobinson/multi-column-markdown))
+#### Tableaux (plugin [Templater](https://github.com/SilentVoid13/Templater))
 
 - `Tab builder.md` - Créateur de tableaux personnalisés
 - `Tableaux pré-remplis.md` - Tableaux pré-remplis
 - `Tableaux pré-remplis v2.md` - Tableaux pré-remplis v2
 - `weekly.md` - Tableau hebdomadaire
 
-#### Colonnes (plugin [multi-column-markdown](https://github.com/ckRobinson/multi-column-markdown))
+#### Colonnes (plugin [multi-column-markdown](https://github.com/ckRobinson/multi-column-markdown) et [Templater](https://github.com/SilentVoid13/Templater))
 
 - `2 colonnes.md` - Mise en page 2 colonnes
 - `2 colonnes comparaisons.md` - Comparaison en 2 colonnes
