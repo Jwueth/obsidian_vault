@@ -78,7 +78,41 @@ Pour activer le thème, allez dans **Paramètres → Apparence → CSS Snippets*
 <RESOURCES>/
 <TEMPLATES>/
 Pièces jointes/
+OpenClaw/
 ```
+
+## OpenClaw - Architecture Cognitive Partagée
+
+OpenClaw est un système de collaboration entre humain et IA reposant sur une **séparation stricte des zones de lecture/écriture**.
+
+### Principe
+
+- **L'IA** accède au savoir humain en **lecture seule**
+- **L'humain** garde une **observabilité totale** sur le travail de l'IA via un dossier miroir
+
+### Structure
+
+```
+OpenClaw/
+├── agent_output/    ← Production de l'IA (écriture)
+├── context/         ← Contexte pour l'IA
+├── human/           ← Instructions humaines (lecture pour l'IA)
+└── mirror/          ← Miroir du workspace IA (observabilité)
+```
+
+### Avantages
+
+- **Souveraineté** : Aucune donnée ne réside sur des clouds propriétaires
+- **Séparation des rôles** : L'IA lit le savoir, l'humain valide la production
+- **Auditabilité** : Chaque décision de l'IA est visible dans le graphe Obsidian
+- **Collaboration sans conflit** : Zones read-only vs write évitent les corruptions
+
+### Utilisation
+
+1. L'IA lit les notes dans `<NOTES>/` (lecture seule)
+2. L'IA écrit sa production dans `OpenClaw/agent_output/`
+3. L'humain valide et déplace vers `<NOTES>/`
+4. Le miroir dans `OpenClaw/mirror/` permet l'observabilité
 
 ## Utilisation
 
