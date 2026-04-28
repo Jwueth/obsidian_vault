@@ -119,6 +119,24 @@ Les skills utilisent les templates du dossier `<TEMPLATES>/Notes/` :
 
 > **Note :** Les templates utilisent des formules [Templater](https://github.com/SilentVoid1/Templater) pour générer automatiquement des propriétés et du contenu.
 
+### Templates de mise en page
+
+Des templates de mise en page sont disponibles dans `<TEMPLATES>/mise en page/` :
+
+#### Tableaux (plugin [multi-column-markdown](https://github.com/ckRobinson/multi-column-markdown))
+
+- `Tab builder.md` - Créateur de tableaux personnalisés
+- `Tableaux pré-remplis.md` - Tableaux pré-remplis
+- `Tableaux pré-remplis v2.md` - Tableaux pré-remplis v2
+- `weekly.md` - Tableau hebdomadaire
+
+#### Colonnes (plugin [multi-column-markdown](https://github.com/ckRobinson/multi-column-markdown))
+
+- `2 colonnes.md` - Mise en page 2 colonnes
+- `2 colonnes comparaisons.md` - Comparaison en 2 colonnes
+- `3 colonnes.md` - Mise en page 3 colonnes
+- `Colonnes builder.md` - Créateur de colonnes personnalisées
+
 ## Philosophie
 
 > Obsidian = mémoire
