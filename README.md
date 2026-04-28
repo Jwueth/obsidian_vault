@@ -1,10 +1,17 @@
-# Skills Obsidian pour Claude
+# Système KM Personnel pour Obsidian
 
-> Une collection de skills pour utiliser Claude avec Obsidian pour la gestion des connaissances.
+> Un système complet de gestion des connaissances (KM) pour Obsidian, intégrant Claude comme amplificateur cognitif.
 
 ## Vue d'ensemble
 
-Ce dépôt fournit un ensemble de skills qui permettent à Claude de travailler avec des vaults Obsidian. Les skills définissent comment Claude doit organiser, structurer et gérer vos notes.
+Ce dépôt propose un **système KM personnel** pour Obsidian qui combine :
+
+- **Structure de vault** organisationnelle (inbox, notes, catégories, ressources)
+- **Skills Claude** pour automatiser les workflows de gestion des connaissances
+- **Templates** pour standardiser la création de notes (concepts, projets, standards)
+- **Templates de mise en page** pour les tableaux et colonnes (multi-column-markdown)
+- **Thème custom** pinkdream avec snippets CSS
+- **Configuration** complète et prête à l'emploi
 
 ## Démarrage rapide
 
@@ -79,22 +86,21 @@ Pièces jointes/
 OpenClaw/
 ```
 
-## OpenClaw - Architecture Cognitive Partagée
+## Architecture Cognitive Partagée (OpenClaw)
 
-OpenClaw est un système de collaboration entre humain et IA reposant sur une **séparation stricte des zones de lecture/écriture**.
+Le dossier `OpenClaw/` illustre une **architecture de collaboration humain-IA** basée sur la séparation lecture/écriture. Cette architecture nécessite une mise en place manuelle (Docker, Nextcloud, rsync) et n'est pas incluse dans ce dépôt.
 
 ### Principe
 
-- **L'IA** accède au savoir humain en **lecture seule** <NOTES>/
-- **L'humain** garde une **observabilité totale** sur le travail de l'IA via un dossier miroir 
-- **Les productions de l'IA** alimentent le savoir humain <NOTES>/
+- **L'IA** accède au savoir humain en **lecture seule**
+- **L'humain** garde une **observabilité totale** sur le travail de l'IA via un dossier miroir
 
 ### Structure
 
 ```
 OpenClaw/
 ├── agent_output/    ← Production de l'IA (écriture)
-├── context/         ← Contexte spécifique pour l'IA
+├── context/         ← Contexte pour l'IA
 ├── human/           ← Instructions humaines (lecture pour l'IA)
 └── mirror/          ← Miroir du workspace IA (observabilité)
 ```
@@ -106,12 +112,7 @@ OpenClaw/
 - **Auditabilité** : Chaque décision de l'IA est visible dans le graphe Obsidian
 - **Collaboration sans conflit** : Zones read-only vs write évitent les corruptions
 
-### Utilisation
-
-1. L'IA lit les notes dans `<NOTES>/` (lecture seule)
-2. L'IA écrit sa production dans `OpenClaw/agent_output/`
-3. L'humain valide et déplace vers `<NOTES>/`
-4. Le miroir dans `OpenClaw/mirror/` permet l'observabilité
+> **Note :** Cette architecture nécessite une mise en place manuelle avec Docker, Nextcloud et rsync. Les fichiers inclus sont des exemples de structure.
 
 ## Utilisation
 
