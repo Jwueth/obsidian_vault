@@ -81,6 +81,8 @@ Pour activer le thème, allez dans **Paramètres → Apparence → CSS Snippets*
 <RESOURCES>/
 <TEMPLATES>/
 Pièces jointes/
+Excalidraw/          (optionnel, plugin Excalidraw)
+OpenClaw/            (optionnel)
 ```
 
 ## Configuration
