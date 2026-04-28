@@ -137,6 +137,7 @@ Le dossier `OpenClaw/` illustre une **architecture de collaboration humain-IA** 
 
 - **L'IA** accède au savoir humain en **lecture seule**
 - **L'humain** garde une **observabilité totale** sur le travail de l'IA via un dossier miroir
+- **Les productions** de l'IA alimente le **savoir humain**
 
 ### Structure
 
