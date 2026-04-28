@@ -13,6 +13,27 @@ Ce dépôt fournit un ensemble de skills qui permettent à Claude de travailler 
 3. Copiez le fichier `CLAUDE.md` à la racine de votre vault
 4. Personnalisez les placeholders dans `CLAUDE.md` avec vos chemins de vault
 
+## Prérequis
+
+### Plugins requis
+
+Les skills nécessitent les plugins communautaires suivants :
+
+| Plugin | Usage |
+|--------|-------|
+| [templater-obsidian](https://github.com/SilentVoid1/Templater) | Formules dans les templates |
+| [remotely-save](https://github.com/remotely-save/remotely-save) | Synchronisation du vault |
+| [obsidian-local-rest-api](https://github.com/coddingtonbear/obsidian-local-rest-api) | API REST locale |
+| [obsidian-importer](https://github.com/obsidianmd/obsidian-importer) | Import de données |
+| [better-export-pdf](https://github.com/l1xnan/obsidian-better-export-pdf) | Export PDF amélioré |
+| [multi-column-markdown](https://github.com/ckRobinson/multi-column-markdown) | Colonnes dans le Markdown |
+| [obsidian-pandoc](https://github.com/OliverBalfour/obsidian-pandoc) | Export Pandoc |
+| [obsidian-excalidraw-plugin](https://github.com/zsviczian/obsidian-excalidraw-plugin) | Diagrammes Excalidraw |
+| [notebook-navigator](https://github.com/xRyul/notebook-navigator) | Navigation dans les notebooks |
+| [obsidian-advanced-uri](https://github.com/Vinzent03/obsidian-advanced-uri) | URI avancées |
+
+> **Note :** Les templates utilisent des formules [Templater](https://github.com/SilentVoid1/Templater). Assurez-vous que le plugin est installé et activé.
+
 ## Skills
 
 ### Skills principaux
@@ -95,6 +116,8 @@ Les skills utilisent les templates du dossier `<TEMPLATES>/Notes/` :
 - `<TEMPLATE_PROJET>`
 - `<TEMPLATE_STANDARD>`
 - `<TEMPLATE_CONCEPT>`
+
+> **Note :** Les templates utilisent des formules [Templater](https://github.com/SilentVoid1/Templater) pour générer automatiquement des propriétés et du contenu.
 
 ## Philosophie
 
