@@ -85,15 +85,16 @@ OpenClaw est un système de collaboration entre humain et IA reposant sur une **
 
 ### Principe
 
-- **L'IA** accède au savoir humain en **lecture seule**
-- **L'humain** garde une **observabilité totale** sur le travail de l'IA via un dossier miroir
+- **L'IA** accède au savoir humain en **lecture seule** <NOTES>/
+- **L'humain** garde une **observabilité totale** sur le travail de l'IA via un dossier miroir 
+- **Les productions de l'IA** alimentent le savoir humain <NOTES>/
 
 ### Structure
 
 ```
 OpenClaw/
 ├── agent_output/    ← Production de l'IA (écriture)
-├── context/         ← Contexte pour l'IA
+├── context/         ← Contexte spécifique pour l'IA
 ├── human/           ← Instructions humaines (lecture pour l'IA)
 └── mirror/          ← Miroir du workspace IA (observabilité)
 ```
